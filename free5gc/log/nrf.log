@@ -1,0 +1,10 @@
+time="2022-11-28T17:14:07+08:00" level=info msg="config version [1.0.1]" category=CFG component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg="NRF Log level is set to [info] level" category=Init component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg=nrf category=App component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg="NRF version:  \n\tfree5GC version: v3.2.1-13-ge104d46\n\tbuild time:      2022-11-28T09:02:02Z\n\tcommit hash:     c474ae8f\n\tcommit time:     2022-07-08T04:12:45Z\n\tgo version:      go1.19.3 linux/amd64" category=App component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg="Server started" category=Init component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg="nrfconfig Info: Version[1.0.1] Description[NRF initial local configuration]" category=Init component=NRF
+time="2022-11-28T17:14:07+08:00" level=info msg="Binding addr: [127.0.0.10:8000]" category=Init component=NRF
+time="2022-11-28T17:25:49+08:00" level=info msg="Terminating NRF..." category=Init component=NRF
+time="2022-11-28T17:25:49+08:00" level=info msg="Remove NF Profile..." category=Init component=NRF
+time="2022-11-28T17:25:49+08:00" level=info msg="NRF terminated" category=Init component=NRF
