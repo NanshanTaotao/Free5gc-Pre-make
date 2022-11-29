@@ -1,0 +1,26 @@
+time="2022-11-28T21:43:42+08:00" level=info msg="UPF version:  \n\tfree5GC version: v3.2.1-13-ge104d46\n\tbuild time:      2022-11-28T09:02:29Z\n\tcommit hash:     e05c3433\n\tcommit time:     2022-09-02T01:58:48Z\n\tgo version:      go1.19.3 linux/amd64" category=Main component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="Read config from [./config/upfcfg.test.yaml]" category=Cfg component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="==================================================" category=Cfg component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="(*factory.Config)(0xc0003be780)({\n\tVersion: (string) (len=5) \"1.0.3\",\n\tDescription: (string) (len=31) \"UPF initial local configuration\",\n\tPfcp: (*factory.Pfcp)(0xc0003d8e40)({\n\t\tAddr: (string) (len=14) \"10.200.200.101\",\n\t\tNodeID: (string) (len=14) \"10.200.200.101\",\n\t\tRetransTimeout: (time.Duration) 1s,\n\t\tMaxRetrans: (uint8) 3\n\t}),\n\tGtpu: (*factory.Gtpu)(0xc0003d8ff0)({\n\t\tForwarder: (string) (len=5) \"gtp5g\",\n\t\tIfList: ([]factory.IfInfo) (len=1 cap=1) {\n\t\t\t(factory.IfInfo) {\n\t\t\t\tAddr: (string) (len=14) \"10.200.200.102\",\n\t\t\t\tType: (string) (len=2) \"N3\",\n\t\t\t\tName: (string) \"\",\n\t\t\t\tIfName: (string) \"\",\n\t\t\t\tMTU: (uint32) 0\n\t\t\t}\n\t\t}\n\t}),\n\tDnnList: ([]factory.DnnList) (len=1 cap=1) {\n\t\t(factory.DnnList) {\n\t\t\tDnn: (string) (len=8) \"internet\",\n\t\t\tCidr: (string) (len=12) \"10.60.0.0/16\",\n\t\t\tNatIfName: (string) \"\"\n\t\t}\n\t},\n\tLogger: (*factory.Logger)(0xc0003b0ca0)({\n\t\tEnable: (bool) true,\n\t\tLevel: (string) (len=4) \"info\",\n\t\tReportCaller: (bool) false\n\t})\n})\n" category=Cfg component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="==================================================" category=Cfg component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="Log level is set to [info] level" category=Main component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="starting Gtpu Forwarder [gtp5g]" category=Main component=UPF
+time="2022-11-28T21:43:42+08:00" level=info msg="GTP Address: \"10.200.200.102:2152\"" category=Main component=UPF
+time="2022-11-28T21:43:43+08:00" level=info msg="buff server started" category=Buff component=UPF
+time="2022-11-28T21:43:43+08:00" level=info msg="starting pfcp server" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:43:43+08:00" level=info msg="pfcp server started" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:43:43+08:00" level=info msg="UPF started" category=Main component=UPF
+time="2022-11-28T21:43:48+08:00" level=info msg=handleAssociationSetupRequest category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:43:48+08:00" level=info msg="New node" category=Pfcp component=UPF listen_addr="10.200.200.101:8805" rnode_id="rNodeID:10.200.200.1"
+time="2022-11-28T21:43:50+08:00" level=info msg=handleSessionEstablishmentRequest category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:43:50+08:00" level=info msg="New session" category=Pfcp component=UPF listen_addr="10.200.200.101:8805" rnode_id="rNodeID:10.200.200.1" session_id="SEID:L(0x1),R(0x1)"
+time="2022-11-28T21:43:50+08:00" level=info msg=handleSessionModificationRequest category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:44:02+08:00" level=info msg="Shutdown UPF ..." category=Main component=UPF
+time="2022-11-28T21:44:02+08:00" level=info msg="Stopping pfcp server" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:44:02+08:00" level=error msg="read udp4 10.200.200.101:8805: use of closed network connection" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:44:02+08:00" level=info msg="pfcp reciver stopped" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:44:02+08:00" level=info msg="pfcp server stopped" category=Pfcp component=UPF listen_addr="10.200.200.101:8805"
+time="2022-11-28T21:44:02+08:00" level=info msg="buff server stopped" category=Buff component=UPF
+time="2022-11-28T21:44:02+08:00" level=info msg="Terminating UPF..." category=Main component=UPF
+time="2022-11-28T21:44:02+08:00" level=info msg="UPF terminated" category=Main component=UPF
+time="2022-11-28T21:44:02+08:00" level=info msg="UPF exited" category=Main component=UPF
